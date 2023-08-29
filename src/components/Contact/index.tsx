@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.contact}>
       <div className={styles.left}>
-        <Image src="/assets/shake.svg" alt="" width={100} height={100} />
+        <Image src="./assets/shake.svg" alt="" width={100} height={100} />
       </div>
       <div className={styles.right}>
         <h2>Contact.</h2>
