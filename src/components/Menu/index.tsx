@@ -5,7 +5,7 @@ import { MenuLinkType } from "@/types";
 const Menu: React.FC<MenuProps> = ({ menuOpen, onToggle }) => {
   const links: Array<MenuLinkType> = [
     { section: "intro", label: "Home" },
-    { section: "portfolio", label: "Portfolio" },
+    // { section: "portfolio", label: "Portfolio" },
     { section: "works", label: "Works" },
     // { section: "testimonials", label: "Testimonials" },
     { section: "contact", label: "Contact" },
