@@ -1,0 +1,20 @@
+@import '../../../app/globals.scss';
+
+.container {
+    font-size: 14px;
+    padding: 7px;
+    cursor: pointer;
+    color: $secondaryColor;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+    background-color: white;
+
+    @include mobile{
+        margin-right: 25px;
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}

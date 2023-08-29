@@ -1,0 +1,13 @@
+$topbar-height: 70px;
+$mainColor: #0a1a32;
+$secondaryColor: #194584;
+$bgWorksIconColor:rgb(232, 238, 246);
+// $mainColor: #BA9B65;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

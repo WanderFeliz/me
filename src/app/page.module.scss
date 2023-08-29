@@ -1,0 +1,28 @@
+@import "./globals.scss";
+
+.main{
+    height: 100vh;
+
+    .sections{
+        overflow: scroll;
+        width: 100%;
+        height: calc(100vh - $topbar-height);
+        background-color: #BA9B65;
+        position: relative;
+        top: $topbar-height;
+
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        > * {
+            width: 100vw;
+            height: calc(100vh - $topbar-height);
+            scroll-snap-align: start;
+            overflow: hidden;
+        }
+    }
+}
