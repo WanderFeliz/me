@@ -1,0 +1,23 @@
+$topbar-height: 70px;
+// Color variable
+$mainColor: #FFFFFF;
+$secondaryColor: #194584;
+$accentColor: #AB5050;
+// $mainColor: #0a1a32;
+// $secondaryColor: #194584;
+// $accentColor: #BA9B65;
+
+// dark mode color
+$mainColorDark: #0a1a32;
+$secondaryColorDark: #194584;
+$accentColorDark: #AB5050;
+
+$bgWorksIconColor:rgb(232, 238, 246);
+
+$mobile-width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}){
+        @content
+    }
+}

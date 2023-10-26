@@ -1,4 +1,4 @@
-@import '../../app/globals.scss';
+@use '/src/app/variable' as *;
 
 .works{
     background-color: $secondaryColor;

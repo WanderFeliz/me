@@ -1,10 +1,10 @@
-@import '../../../app/globals.scss';
+@use '/src/app/variable' as *;
 
 .container {
     font-size: 14px;
     padding: 7px;
     cursor: pointer;
-    color: $secondaryColor;
+    color: var(--secondary-color);
     border-radius: 10px;
     transition: all 0.1s ease;
     background-color: white;
@@ -14,7 +14,7 @@
     }
 
     &.active{
-        background-color: $mainColor;
-        color: white;
+        background-color: var(--accent-color);
+        color: var(--text-color-light);
     }
 }

@@ -1,7 +1,7 @@
-@import './../../app/globals.scss';
+@use '/src/app/variable' as *;
 
 .contact{
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
 
     @include mobile{
@@ -67,7 +67,7 @@
             button {
                 width: 150px;
                 height: 30px;
-                background-color: $secondaryColor;
+                background-color: var(--secondary-color);
                 color: white;
                 border: none;
                 border-radius: 10px;

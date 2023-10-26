@@ -1,4 +1,4 @@
-@import "./globals.scss";
+@use '/src/app/variable' as *;
 
 .main{
     height: 100vh;
@@ -7,7 +7,7 @@
         overflow: scroll;
         width: 100%;
         height: calc(100vh - $topbar-height);
-        background-color: #BA9B65;
+        background-color: var(--primary-color);
         position: relative;
         top: $topbar-height;
 

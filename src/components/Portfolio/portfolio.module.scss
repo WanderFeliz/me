@@ -1,4 +1,4 @@
-@import '../../app/globals.scss';
+@use '/src/app/variable' as *;
 
 .portfolio{
     background-color: white;
@@ -67,7 +67,7 @@
             }
 
             &:hover{
-                background-color: $mainColor;
+                background-color: var(--primary-color);
 
                 .img{
                     opacity: 0.2;

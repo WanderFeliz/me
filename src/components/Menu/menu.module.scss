@@ -1,9 +1,9 @@
-@import "../../app/globals.scss";
+@use '/src/app/variable' as *;
 
 .menu{
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: var(--secondary-color);
     position: fixed;
     top: 0;
     right: -300px;

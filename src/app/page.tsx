@@ -2,7 +2,7 @@
 import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
 import Menu from "@/components/Menu";
-// import Portfolio from '@/components/Portfolio'
+import Portfolio from '@/components/Portfolio'
 // import Testimonials from '@/components/Testimonials' // Not used for now
 import Topbar from "@/components/Topbar";
 import Works from "@/components/Works";
@@ -22,7 +22,7 @@ export default function Home() {
       <Menu menuOpen={menuOpen} onToggle={handleToggle} />
       <div className={styles.sections}>
         <Intro />
-        {/* <Portfolio/> */}
+        <Portfolio/>
         <Works />
         {/* <Testimonials/> Not used for now */}
         <Contact />

@@ -1,7 +1,7 @@
-@import '../../app/globals.scss';
+@use '/src/app/variable' as *;
 
 .intro {
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
 
     @include mobile{
@@ -16,7 +16,7 @@
         .imgContainer {
             height: 700px;
             width: 700px;
-            background-color: $secondaryColor;
+            background-color: var(--secondary-color);
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
@@ -91,7 +91,7 @@
 
                 .ocupation {
                     font-size: inherit;
-                    color: $secondaryColor;
+                    color: var(--secondary-color);
                     
                 }
             }
@@ -118,22 +118,26 @@
                 .btn{
                     padding: 10px 20px;
                     border-radius: 5px;
-                    border: 1px solid $secondaryColor;
-                    color: $secondaryColor;
+                    border: 1px solid var(--accent-color);
+                    color: var(--accent-color);
                     font-size: 20px;
                     text-decoration: none;
                     cursor: pointer;
                     transition: all 0.3s ease-in-out;
 
                     &.contact{
-                        background-color: $secondaryColor;
+                        background-color: var(--secondary-color);
                         color: white;
+                        border: 1px solid var(--secondary-color);
+                    }
+                    &.contact:hover{
+                        border: 1px solid var(--accent-color);
                     }
 
 
 
                     &:hover{
-                        background-color: $secondaryColor;
+                        background-color: var(--accent-color);
                         color: white;
                     }
                 }
